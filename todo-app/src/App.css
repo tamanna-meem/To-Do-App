@@ -1,0 +1,84 @@
+body{
+  background-color: #333;
+}
+.App {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.add-todo {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.add-todo input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+}
+
+.add-todo button {
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.add-todo button:hover {
+  background: #0056b3;
+}
+
+.todos {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.todo:last-child {
+  border-bottom: none;
+}
+
+.todo input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.todo span {
+  flex: 1;
+}
+
+.todo.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.todo button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.todo button:hover {
+  background: #c82333;
+}
